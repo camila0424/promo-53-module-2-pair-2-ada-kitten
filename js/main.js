@@ -49,3 +49,14 @@ const content = `<li class="card">
 </li>`;
 
 catList.innerHTML = content;
+
+
+const moreBtn = document.querySelector('.js-btn-add');
+const formJsNew = document.querySelector('.js-new-form');
+
+moreBtn.addEventListener ('click', (event) => {
+  event.preventDefault();
+  console.log ('gatos');
+
+  formJsNew.classList.toggle ('collapsed');
+}) 
